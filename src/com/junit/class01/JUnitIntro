@@ -1,0 +1,30 @@
+What is JUnit (Unit Testing Framework):
+- library;
+- testing methods (@Test);
+- verify your code;
+- unit testing;
+
+Framework - set of rules:
+- easy to understand;
+- easy to write code;
+- more usability;
+- more organized;
+- scalable;
+
+Collections framework; Spring framework.
+
+Features of Testing Framework?
+* Validation;
+* Better / Detailed Reporting;
+* Documentation of the framework;
+* Ability to group the tests under User Defined Category;
+* Ability to pass parameters in the test;
+* Data Driven Testing Facility;
+
+Data Driven Testing - same test we execute for different data.
+
+When we do DDT:
+1. Need to clarify the requirements from (PO or BA), before assuming anything.
+
+
+
