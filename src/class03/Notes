@@ -1,0 +1,107 @@
+BaseShape:
+    - erase();
+    - abstract draw(); // we know what "draw" does, but we do not know how, we need to go to sub-class to ask how?
+
+    Triangle extends BaseShape {
+            - draw(here we are drawing the Triangle - this method knows HOW?); // overriding
+    }
+
+    Square extends BaseShape {
+            - draw(here we are drawing the Square - this method knows HOW?); // overriding
+    }
+
+    Circle extends BaseShape {
+            - draw(here we are drawing the Circle - this method knows HOW?); // overriding
+    }
+
+INTERVIEW QUESTION: What is more beneficial 1 or 2?
+1.  Circle c = new Circle();
+    c.draw();
+    c.erase();
+
+2.  BaseShape bs = new Circle();
+    bs.draw();
+    bs.erase();
+
+** EXAMPLE (consider the following program):
+
+public static void main(String str[]){
+    String userInput sc.nextLine();
+
+    switch (userInput){
+
+            case "Triangle":
+                Triangle t = new Triangle();
+                    t.draw();
+                    t.erase();
+
+            case "Square":
+                Square s = new Square();
+                    s.draw();
+                    s.erase();
+
+            case "Circle":
+                Circle c = new Circle();
+                    c.draw();
+                    c.erase();
+    }
+}
+
+** IMPROVED VERSION of the EXAMPLE:
+
+public static void main(String str[]){
+    String userInput sc.nextLine();
+
+    BaseShape bs;
+    switch (userInput){
+
+            case "Triangle":
+                bs = new Triangle();
+
+            case "Square":
+                bs = new Square();
+
+            case "Circle":
+                bs = new Circle();
+    }
+    bs.draw();
+    bs.erase();
+}
+
+** BROWSER EXAMPLE (will come handy when we lear n Selenium):
+
+    public static void main(String str[]){
+        String userInput sc.nextLine();
+
+        Browser b;
+        switch (userInput){
+
+                case "Chrome":
+                    b = new Chrome();
+
+                case "FireFox":
+                    b = new FireFox();
+
+                case "Safari":
+                    b = new Safari();
+        }
+
+        b.openWebsite();
+        b.click();
+        b.type();
+    }
+
+ABSTRACTION:
+What is abstraction? - something we have an idea about, but we cannot see that.
+
+For example, tool - we know what the tool does, but we do not know how?
+
+
+
+
+
+
+
+
+
+

@@ -24,7 +24,18 @@ Features of Testing Framework?
 Data Driven Testing - same test we execute for different data.
 
 When we do DDT:
-1. Need to clarify the requirements from (PO or BA), before assuming anything.
+1. We need to clarify the requirements from (PO or BA), before assuming anything.
+
+Class03Dec02_Revision JUnit:
+@Test       -> makes the method "special", makes it a "test" method
+@Before     -> pre-requisite("set up"): set up data-base connection
+@After      -> clean-up("wrap-up"): close the Browser, close the DB(Data Base) Connection
+@Category   -> categorise("group") our tests: Smoke tests, Regression tests, API tests
+
+We have the Runner Class to execute a set of Test Cases.
+
+Why Cucumber became successful?
+
 
 
 

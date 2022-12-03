@@ -1,4 +1,4 @@
-package com.junit.class01;
+package class01;
 /*
 Test Cases for Multiplication method:
 
@@ -8,11 +8,12 @@ Test Cases for Multiplication method:
 4) a = -10, b = -10    exp - (100)
 
  */
+import class02.BaseTest;
 import org.junit.Assert;
 
 import org.junit.Test;
 
-public class MulTest extends BaseTest{
+public class MultiplicationTest extends BaseTest {
 
         // When we use @Test then it'll become test cases otherwise it'll be only java method
         @Test

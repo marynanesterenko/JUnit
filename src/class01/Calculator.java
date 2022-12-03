@@ -1,4 +1,4 @@
-package com.junit.class01;
+package class01;
 /*
 - before we release - we need to do the Unit Testing
 - we will try to test each of the methods;

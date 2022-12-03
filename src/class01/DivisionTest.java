@@ -1,4 +1,4 @@
-package com.junit.class01;
+package class01;
 /*
 Test Cases for Division method:
 
@@ -15,7 +15,11 @@ Test Cases for Division method:
 11. 10000, 2500, expected result - 4
  */
 
+import class02.BaseTest;
+import class02.TestGroups.Smoke;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+
 import static org.junit.Assert.assertTrue;
 
 // in "Test" Class, we cannot have the "main" method, because we need our Test Cases to be independent from each other,
@@ -23,10 +27,11 @@ import static org.junit.Assert.assertTrue;
 // so we need to figure out the alternative to the "main" method, so that we can still run our program
 // that is what we will use the JUnit's library Annotations for
 
-public class DivisionTest extends BaseTest{
+public class DivisionTest extends BaseTest {
     // we need to tell Java, that this is not the normal method, this is an annotation
     // "@" is the special symbol to tell Java that this is not a regular method, but a Test Case
     // always has to be above(!) the method
+    @Category({Smoke.class, Maryna.class})
     @Test
     public void verifyCaseWhenFirstNumberGreaterThanSecondNumber(){
         int expectedResult = 2;

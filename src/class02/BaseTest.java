@@ -1,10 +1,11 @@
-package com.junit.class01;
+package class02;
 
+import class01.Calculator;
 import org.junit.After;
 import org.junit.Before;
 
 /*
-We can write down here everything we are using in every Class
+BaseTest we can write down here everything we are using in every Class
  */
 public class BaseTest {
     // Declaration of object
